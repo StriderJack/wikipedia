@@ -9,5 +9,5 @@ def hello(person):
     return fetch_entity(person)
 
 if __name__ == '__main__':
-    port = sys.argv[1]
+    port = int(sys.argv[1])
     app.run(port=port)
