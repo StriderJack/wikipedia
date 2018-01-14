@@ -75,4 +75,4 @@ def fetch_entity(title):
 if __name__ == '__main__':
     people = sys.argv[1:]
     for person in people:
-        fetch_entity(person)
+        print(fetch_entity(person))

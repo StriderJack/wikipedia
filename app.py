@@ -1,3 +1,4 @@
+import sys
 from flask import Flask
 from wiki import fetch_entity
 
@@ -8,4 +9,5 @@ def hello(person):
     return fetch_entity(person)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = sys.argv[1]
+    app.run(port=port)
