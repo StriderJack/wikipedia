@@ -1,5 +1,5 @@
 from flask import Flask
-from .wiki import fetch_entity
+from wiki import fetch_entity
 
 app = Flask(__name__)
 
